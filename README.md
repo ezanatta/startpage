@@ -4,3 +4,4 @@ My firefox start-page. I've removed sensitive URLs, however the general layout i
 # Usage
 Check [/r/startpages](https://www.reddit.com/r/startpages/) to find out how to use it with your specific browser.
 
+# startpage
