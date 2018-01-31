@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+	<head>
+        <script type="text/javascript">
+        function startTime()
+        {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            var d=today.getDate();
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('txt').innerHTML=h+" horas, "+m+" minutos e "+s+" fucking segundos";
+            document.getElementById('date').innerHTML=d;
+            t=setTimeout('startTime()',500);
+        }
+        function checkTime(i)
+        {
+            if (i<10)
+            {
+                i="0" + i;
+            }
+            return i;
+        }
+        </script>
+        
+        <script>
+        
+        function searchengine(){
+            var inp=document.getElementById("input").value;
+            
+            if (inp.search('-w')!=-1)
+            {
+                var output=inp.replace("-w ", "https://en.wikipedia.org/wiki/");
+                window.open(output,"_self");
+            }    
+            else if (inp.search('-g')!=-1)
+            {
+                var output=inp.replace("-g ", "https://www.google.com.br/search?client=opera&q=");
+                window.open(output,"_self");
+            }            
+            else if (inp.search('-m')!=-1)
+            {
+                var output=inp.replace("-m ", "http://www.metal-archives.com/bands/");
+                window.open(output,"_self");
+            }
+            else if (inp.search('-r')!=-1)
+            {
+                var output=inp.replace("-r ", "https://rateyourmusic.com/search?searchtype=a&searchterm=");
+                window.open(output,"_self");
+            } else {
+            
+                var output="https://duckduckgo.com/?q="+inp;
+                window.open(output,"_self");
+            }
+            return false;
+        }
+        </script>
+    
+            
+		<title>Home?</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body onload="startTime()">
+
+		<div id="container">
+            <div id='video'>
+                <img src='frajola.gif'>
+            </div>
+            
+			<div id="header">
+				<h3 style="display: inline;"><span class="blue"> ~ </span> <span class="cyan">❯</span> <span class="blue"></span></h3>
+				<form id="searchtxt" onSubmit="return searchengine()">
+					<input id="input" type="text" autofocus="autofocus" name="q" placeholder="search.." \>
+				</form>
+
+			</div>
+			<div id="links">
+
+				<div class="linksbox">
+					<h3><span class="blue"> ~ </span> <span class="cyan">❯</span> [<span class="blue">General</span>]<span class="cyan">:</span></h3>
+			        <a class="black" target="_self" href="http://globoesporte.globo.com/">GloboEsporte</a>
+			        <a class="black"  target="_self" href="http://www.pokebeach.com/">Pokébeach</a>
+					<a class="black"  target="_self" href="http://www.facebook.com">Facebook</a>
+			        <a class="black" target="_self" href="http://www.youtube.com">Youtube</a>
+			        <a class="black" target="_self" href="http://boards.4chan.org/mu/">/mu/</a>
+					<a class="black"  target="_self" href="https://www.last.fm/home">LastFM</a>
+					<a class="black"  target="_self" href="http://www.folha.uol.com.br/">Folha</a>
+					<a class="black"  target="_self" href="http://www2.correios.com.br/sistemas/rastreamento/">Correio</a>
+					<a class="black"  target="_self" href="https://web.whatsapp.com/">Whatsapp</a>
+				</div>
+
+				<div class="linksbox">
+					<h3><span class="blue"> ~ </span> <span class="cyan">❯</span> [<span class="blue">Reddit</span>]<span class="cyan">:</span></h3>
+			        <a class="black" target="_self" href="https://www.reddit.com">/r/Front</a>
+			        <a class="black" target="_self" href="https://www.reddit.com/r/totalwar">/r/totalwar</a>
+			        <a class="black" target="_self" href="https://www.reddit.com/r/brasil/">/r/Brasil</a>
+			        <a class="black" target="_self" href="https://www.reddit.com/r/unixporn/">/r/unixporn</a>
+					<a class="black" target="_self" href="https://www.reddit.com/r/ADHD/">/r/ADHD</a>
+					<a class="black" target="_self" href="https://www.reddit.com/r/commandline/">/r/commandline</a>
+					<a class="black" target="_self" href="https://www.reddit.com/r/soccer/">/r/soccer</a>
+				</div>
+
+				<div class="linksbox">
+					<h3><span class="blue"> ~ </span> <span class="cyan">❯</span> [<span class="blue">Work</span>]<span class="cyan">:</span></h3>
+			        <a class="black"  target="_self" href="http://arxiv.org/list/astro-ph/new">astro-ph</a>
+					<a class="black"  target="_self" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+			        <a class="black" target="_self" href="http://www.ufrgs.br/ufrgs/aluno">UFRGS</a>
+					<a class="black" target="_self" href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar">Lattes</a>
+					<a class="black" target="_self" href="https://www.sharelatex.com/">Sharelatex</a>
+					<a class="black" target="_self" href="http://adsabs.harvard.edu/abstract_service.html">ADS</a>
+				</div>
+
+			</div>
+            <div id="quote">
+				<h3 style="display: inline"><span class="blue"> ~ </span><span class="cyan">❯ </span><span class="black">Cacete, hoje é dia <span class='cyan' id='date'></span> e são:</br></br> </span> <span class="cyan" id="txt" style="margin:auto"></span><span class="black">.</br></br> Feche o navegador, abra um terminal e</span><span class="cyan"> vá trabalhar </span><span class="black2"> (ou dormir, se for tarde).</span>
+			</div>
+		</div>
+	</body>
+</html>
