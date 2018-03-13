@@ -90,7 +90,7 @@ html, body{
 	margin: 4px;
 	padding: 8px 8px 8px 8px;
 	background-color: rgba(40,42,54,0.6);
-	border: 5px solid #282a36;
+	/*border: 5px solid #282a36;*/
 }
 
 .linksbox h3 {
