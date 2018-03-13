@@ -47,7 +47,7 @@ html, body{
 	background-color: rgba(40,42,54,0.6);
 	margin: 4px;
 	padding: 8px;
-	border: 5px solid #282a36;
+	/*border: 5px solid #282a36;*/
 }
 
 #quote {
@@ -57,7 +57,7 @@ html, body{
 	background-color: rgba(40,42,54,0.6);
 	margin: 4px;
 	padding: 8px;
-	border: 5px solid #282a36;
+	/*border: 5px solid #282a36;*/
 }
 
 #video {
@@ -70,7 +70,7 @@ html, body{
     height: 328px;
 	margin: auto;
 	padding: 0px;
-	border: 5px solid #282a36;
+	/*border: 5px solid #282a36;*/
     opacity: 1;
 }
 
