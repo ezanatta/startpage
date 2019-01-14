@@ -15,7 +15,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
-    background-image: url("sturmischer.jpg");
+    background-image: url("night.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #141516;
@@ -44,7 +44,7 @@ html, body{
 	-webkit-box-shadow: 1px 1px 20px 0px #000;
 	-moz-box-shadow: 1px 1px 20px 0px #000;
 	box-shadow: 1px 1px 20px 0px #000;
-	background-color: rgba(40,42,54,0.6);
+	background-color: rgb(42, 42, 43, 0.6);
 	margin: 4px;
 	padding: 8px;
 	/*border: 5px solid #282a36;*/
@@ -54,8 +54,8 @@ html, body{
 	-webkit-box-shadow: 1px 1px 20px 0px #000;
 	-moz-box-shadow: 1px 1px 20px 0px #000;
 	box-shadow: 1px 1px 20px 0px #000;
-	background-color: rgba(40,42,54,0.6);
-	margin: 4px;
+	background-color: rgb(42, 42, 43, 0.6);
+    margin: 4px;
 	padding: 8px;
 	/*border: 5px solid #282a36;*/
 }
@@ -64,7 +64,7 @@ html, body{
 	-webkit-box-shadow: 1px 1px 20px 0px #000;
 	-moz-box-shadow: 1px 1px 20px 0px #000;
 	box-shadow: 1px 1px 20px 0px #000;
-	background-color: rgba(40,42,54,0.6);
+	background-color: rgb(187, 140, 93, 0.6);
     
     width: 506px;
     height: 500px;
@@ -89,7 +89,7 @@ html, body{
 	-webkit-box-flex: 1;
 	margin: 4px;
 	padding: 8px 8px 8px 8px;
-	background-color: rgba(40,42,54,0.6);
+	background-color: rgb(42, 42, 43, 0.6);
 	/*border: 5px solid #282a36;*/
 }
 
@@ -114,7 +114,7 @@ html, body{
 
 
 h3 {
-	font-size: 20px;
+	font-size: 16px;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -145,19 +145,22 @@ h3 {
 .red {
 	padding: 0;
 	color: #ff5c57;
+    font-weight: bold;
 }
 
 .black{
     padding: 0;
     color:#7d7b7b;
     font-weight: bold;
+    font-size: small
 }
 
 .black2{
+    text-align: center;
     padding: 0;
     color:#7d7b7b;
     font-weight: bold;
-    font-size: small;
+    font-family: 'Century Gothic';
 }
 
 form {
