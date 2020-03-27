@@ -65,8 +65,9 @@ html, body{
 	-moz-box-shadow: 1px 1px 20px 0px #000;
 	box-shadow: 1px 1px 20px 0px #000;
 	background-color: rgb(187, 140, 93, 0.6);
-    
-    width: 506px;
+    	display: flex;
+	height: 500px;	
+    /*width: 506px;
     height: 500px;
 	margin: auto;
 	padding: 0px;
