@@ -15,7 +15,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
-    background-image: url("fornax.jpg");
+    background-image: url("backgray.jpg");
     background-size: 100% auto;
     background-repeat: repeat;
     background-color: #141516;
@@ -31,7 +31,7 @@ html, body{
 #container {
 	position: absolute;
 	padding: 0 20px 0 20px;
-	top: 05%;
+	top: 15%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -42,33 +42,33 @@ html, body{
 }
 
 #header {
-	-webkit-box-shadow: 1px 1px 20px 0px #000;
-	-moz-box-shadow: 1px 1px 20px 0px #000;
-	box-shadow: 1px 1px 20px 0px #000;
-	background-color: rgb(42, 42, 43, 0.6);
-	margin: 4px;
-	padding: 8px;
+	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
+	/* -moz-box-shadow: 1px 1px 20px 0px #000; */
+	/* box-shadow: 1px 1px 20px 0px #000; */
+	background-color: #BABBBB;
+	margin: 2px;
+	padding: 0 20px;
 	/*border: 5px solid #282a36;*/
 }
 
 #quote {
-	-webkit-box-shadow: 1px 1px 20px 0px #000;
-	-moz-box-shadow: 1px 1px 20px 0px #000;
-	box-shadow: 1px 1px 20px 0px #000;
-	background-color: rgb(42, 42, 43, 0.6);
+	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
+	/* -moz-box-shadow: 1px 1px 20px 0px #000;
+	/* box-shadow: 1px 1px 20px 0px #000; */
+	background-color: #BBBBBB;
     margin: 4px;
-	padding: 8px;
+	padding: 10px;
 	/*border: 5px solid #282a36;*/
 }
 
 #video {
-	-webkit-box-shadow: 1px 1px 20px 0px #000;
-	-moz-box-shadow: 1px 1px 20px 0px #000;
-	box-shadow: 1px 1px 20px 0px #000;
+	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
+	/*-moz-box-shadow: 1px 1px 20px 0px #000; */
+	/*box-shadow: 1px 1px 20px 0px #000; */
 	background-color: rgb(187, 140, 93, 0.6);
     display: flex;
 	height: 500px;	
-    width: 506px;
+    width: 500px;
     /* width: 100%; */
     margin: auto;
     /*height: 500px;
@@ -86,14 +86,14 @@ html, body{
 }
 
 .linksbox {
-	-webkit-box-shadow: 1px 1px 20px 0px #000;
-	-moz-box-shadow: 1px 1px 20px 0px #000;
-	box-shadow: 1px 1px 40px 0px #000;
+	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
+	/*-moz-box-shadow: 1px 1px 20px 0px #000;
+	/*box-shadow: 1px 1px 40px 0px #000;*/
 	-moz-box-flex: 1;
 	-webkit-box-flex: 1;
 	margin: 4px;
 	padding: 8px 8px 8px 8px;
-	background-color: rgb(42, 42, 43, 0.6);
+	background-color: #BBBBBB;
 	/*border: 5px solid #282a36;*/
 }
 
@@ -108,11 +108,11 @@ html, body{
 }
 
 .linksbox a.black:hover {
-	color: #ff5c57;
+	color: #000000;
 }
 
 .linksbox a.red:hover {
-	color: #ff5c57;
+	color: #ff7c57;
 	text-decoration: underline;
 }
 
@@ -148,13 +148,13 @@ h3 {
 
 .red {
 	padding: 0;
-	color: #ff5c57;
+	color: #ff7c32;
     font-weight: bold;
 }
 
 .black{
     padding: 0;
-    color:#7d7b7b;
+    color:#7A7675;
     font-weight: bold;
     font-size: small
 }
@@ -162,9 +162,9 @@ h3 {
 .black2{
     text-align: center;
     padding: 0;
-    color:#ff5c57;
+    color:#DED7D6;
     font-weight: bold;
-    font-family: 'Century Gothic';
+    font-family: 'Courier';
 }
 
 form {
