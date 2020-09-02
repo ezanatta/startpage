@@ -15,11 +15,12 @@
 html, body{
 	margin: 0;
 	padding: 0;
-    background-image: url("backgray.jpg");
-    background-size: 100% auto;
-    background-repeat: repeat;
+    background-image: url("antennas.png");
+    background-size: 100% cover;
+    background-repeat: no-repeat;
     background-color: #141516;
-	color: #FFFFFF;
+    background-position: center;
+	color: #000000;
 	font-size: 20px;
 }
 
@@ -45,27 +46,27 @@ html, body{
 	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
 	/* -moz-box-shadow: 1px 1px 20px 0px #000; */
 	/* box-shadow: 1px 1px 20px 0px #000; */
-	background-color: #BABBBB;
+	/* background-color: #BABBBB; */
 	margin: 2px;
 	padding: 0 20px;
-	/*border: 5px solid #282a36;*/
+	border: 5px solid #282a36;
 }
 
 #quote {
 	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
 	/* -moz-box-shadow: 1px 1px 20px 0px #000;
 	/* box-shadow: 1px 1px 20px 0px #000; */
-	background-color: #BBBBBB;
+	/* background-color: #BBBBBB; */
     margin: 4px;
 	padding: 10px;
-	/*border: 5px solid #282a36;*/
+	border: 5px solid #282a36;
 }
 
 #video {
 	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
 	/*-moz-box-shadow: 1px 1px 20px 0px #000; */
 	/*box-shadow: 1px 1px 20px 0px #000; */
-	background-color: rgb(187, 140, 93, 0.6);
+	/* background-color: rgb(187, 140, 93, 0.6); */
     display: flex;
 	height: 500px;	
     width: 500px;
@@ -78,6 +79,22 @@ html, body{
     opacity: 1;
 }
 
+#leftimage {
+	/* -webkit-box-shadow: 1px 1px 20px 0px #000; */
+	/*-moz-box-shadow: 1px 1px 20px 0px #000; */
+	/*box-shadow: 1px 1px 20px 0px #000; */
+	/* background-color: rgb(187, 140, 93, 0.6); */
+    display: flex;
+	height: 150px;	
+    width: 150px;
+    /* width: 100%; */
+    margin: auto;
+    /*height: 500px;
+	margin: auto;
+	padding: 0px;
+	/*border: 5px solid #282a36;*/
+    opacity: 1;
+}
 
 #links {
 	display: -moz-box;
@@ -93,8 +110,8 @@ html, body{
 	-webkit-box-flex: 1;
 	margin: 4px;
 	padding: 8px 8px 8px 8px;
-	background-color: #BBBBBB;
-	/*border: 5px solid #282a36;*/
+	/* background-color: #BBBBBB; */
+	border: 5px solid #282a36;
 }
 
 .linksbox h3 {
@@ -107,8 +124,8 @@ html, body{
 	font-weight: bold;
 }
 
-.linksbox a.black:hover {
-	color: #000000;
+.linksbox a.black2:hover {
+	color: #ff7c57;
 }
 
 .linksbox a.red:hover {
@@ -154,17 +171,18 @@ h3 {
 
 .black{
     padding: 0;
-    color:#7A7675;
+    color:#000000;
     font-weight: bold;
-    font-size: small
+    font-size: small;
 }
 
 .black2{
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
     color:#DED7D6;
     font-weight: bold;
-    font-family: 'Courier';
+    font-size: small;
+    /* font-family: 'Courier'; */
 }
 
 form {
@@ -177,7 +195,7 @@ input 	{
 	background: none;
 	display: inline;
 	border: none;
-	color: #FFFF;
+	color: #ff7c57;
 	width: 93%;
 	font-size: 14px;
 }
