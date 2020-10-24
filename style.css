@@ -15,7 +15,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
-    background-image: url("antennas.png");
+    background-image: url("elesh_anime.jpg");
     background-size: 100% cover;
     background-repeat: no-repeat;
     background-color: #141516;
@@ -47,7 +47,7 @@ html, body{
 	/* -moz-box-shadow: 1px 1px 20px 0px #000; */
 	/* box-shadow: 1px 1px 20px 0px #000; */
 	/* background-color: #BABBBB; */
-	margin: 2px;
+    margin: 2px;
 	padding: 0 20px;
 	border: 5px solid #282a36;
 }
@@ -67,16 +67,16 @@ html, body{
 	/*-moz-box-shadow: 1px 1px 20px 0px #000; */
 	/*box-shadow: 1px 1px 20px 0px #000; */
 	/* background-color: rgb(187, 140, 93, 0.6); */
-    display: flex;
-	height: 500px;	
-    width: 500px;
+    /* display: flex; */
+	height: 400px;	
+    width: 328px;
     /* width: 100%; */
     margin: auto;
-    /*height: 500px;
-	margin: auto;
+    /* /*height: 500px; */
+	/* margin: auto; */
 	padding: 0px;
-	/*border: 5px solid #282a36;*/
-    opacity: 1;
+	/* border: 5px solid #282a36; */
+    opacity: 0.8;
 }
 
 #leftimage {
@@ -124,8 +124,8 @@ html, body{
 	font-weight: bold;
 }
 
-.linksbox a.black2:hover {
-	color: #ff7c57;
+.linksbox a.black:hover {
+	color: #ff0000;
 }
 
 .linksbox a.red:hover {
@@ -195,7 +195,7 @@ input 	{
 	background: none;
 	display: inline;
 	border: none;
-	color: #ff7c57;
+	color: #000000;
 	width: 93%;
 	font-size: 14px;
 }
