@@ -15,11 +15,11 @@
 html, body{
 	margin: 0;
 	padding: 0;
-    background-image: url("elesh_anime.jpg");
+    background-image: url("night.jpg");
     background-size: 100% cover;
     background-repeat: no-repeat;
     background-color: #141516;
-    background-position: center;
+    /* background-position: center; */
 	color: #000000;
 	font-size: 20px;
 }
@@ -47,7 +47,7 @@ html, body{
 	/* -moz-box-shadow: 1px 1px 20px 0px #000; */
 	/* box-shadow: 1px 1px 20px 0px #000; */
 	/* background-color: #BABBBB; */
-    margin: 2px;
+	margin: 2px;
 	padding: 0 20px;
 	border: 5px solid #282a36;
 }
@@ -67,16 +67,16 @@ html, body{
 	/*-moz-box-shadow: 1px 1px 20px 0px #000; */
 	/*box-shadow: 1px 1px 20px 0px #000; */
 	/* background-color: rgb(187, 140, 93, 0.6); */
-    /* display: flex; */
-	height: 400px;	
-    width: 328px;
+    display: flex;
+	height: 500px;	
+    width: 500px;
     /* width: 100%; */
     margin: auto;
-    /* /*height: 500px; */
-	/* margin: auto; */
+    /*height: 500px;
+	margin: auto;
 	padding: 0px;
-	/* border: 5px solid #282a36; */
-    opacity: 0.8;
+	/*border: 5px solid #282a36;*/
+    opacity: 1;
 }
 
 #leftimage {
