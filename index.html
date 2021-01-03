@@ -1,29 +1,8 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
+
+<html>
 	<head>
-        <script type="text/javascript">
-        function startTime()
-        {
-            var today=new Date();
-            var h=today.getHours();
-            var m=today.getMinutes();
-            var s=today.getSeconds();
-            var d=today.getDate();
-            m=checkTime(m);
-            s=checkTime(s);
-            document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-            document.getElementById('date').innerHTML=d;
-            t=setTimeout('startTime()',500);
-        }
-        function checkTime(i)
-        {
-            if (i<10)
-            {
-                i="0" + i;
-            }
-            return i;
-        }
-        </script>
-        
         <script>
         
         function searchengine(){
@@ -56,69 +35,73 @@
             return false;
         }
         </script>
-    
-            
-		<title>Home?</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css" />
+		
+        <title>Home?</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"> 
+		<link rel="icon" href="/favicon.ico">
 	</head>
-	<body onload="startTime()">
-
-		<div id="container">
-            <div id='video'>
-                <img src='charcoal.jpg'>
-            </div>  
-			<div id="header">
-				<h3 style="display: inline;"><span class="black2"></span></h3>
-				<form id="searchtxt" onSubmit="return searchengine()">
-					<input id="input" type="text" name="q" placeholder="signa: -r, -g, -m, -w. " \>
-				</form>
-            
+	<body>
+		<div class="column-container">
+			<div class="left">
+				<img src="notfine.png" alt="">
 			</div>
-			<div id="links">
 
-                <div id='leftimage'>
-                    <img src='regatas.png'>
-                </div>
-				<div class="linksbox">
-                    <!-- <h3><center><span class="red">I</span></center></h3> -->
-			        <a class="black2" target="_self" href="http://globoesporte.globo.com/">GE</a>
-			        <a class="black2"  target="_self" href="https://rateyourmusic.com/">RYM</a>
-			        <a class="black2" target="_self" href="http://www.youtube.com">Youtube</a>
-			        <a class="black2" target="_self" href="http://boards.4chan.org/mu/">/mu/</a>
-					<a class="black2"  target="_self" href="https://www.last.fm/home">LastFM</a>
-					<a class="black2"  target="_self" href="http://www.folha.uol.com.br/">Folha</a>
-					<a class="black2"  target="_self" href="https://tweetdeck.twitter.com/">Tweetdeck</a>
-					<a class="black2"  target="_self" href="https://web.whatsapp.com/">Whatsapp</a>
-				</div>
-
-				<div class="linksbox">
-                    <!-- <h3><center><span class="red">II</span></center></h3> -->
-			        <a class="black2" target="_self" href="https://www.reddit.com">/r/Front</a>
-			        <a class="black2" target="_self" href="https://www.reddit.com/r/totalwar">/r/totalwar</a>
-			        <a class="black2" target="_self" href="https://www.reddit.com/r/brasil/">/r/Brasil</a>
-			        <a class="black2" target="_self" href="https://www.reddit.com/r/unixporn/">/r/unixporn</a>
-					<a class="black2" target="_self" href="https://www.reddit.com/r/ADHD/">/r/ADHD</a>
-					<a class="black2" target="_self" href="https://www.reddit.com/r/commandline/">/r/commandline</a>
-					<a class="black2" target="_self" href="https://www.reddit.com/r/futebol/">/r/futebol</a>
-				</div>
-
-				<div class="linksbox">
-                    <!-- <h3><center><span class="red">III</span></center></h3> -->
-			        <a class="black2"  target="_self" href="https://arxiv.org/list/astro-ph.GA/recent">astro-ph.GA</a>
-					<a class="black2"  target="_self" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-			        <a class="black2" target="_self" href="http://www.ufrgs.br/ufrgs/aluno">UFRGS</a>
-					<a class="black2" target="_self" href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar">Lattes</a>
-					<a class="black2" target="_self" href="https://www.sharelatex.com/">Sharelatex</a>
-					<a class="black2" target="_self" href="http://adsabs.harvard.edu/abstract_service.html">ADS</a>
-					<a class="black2" target="_self" href="https://ned.ipac.caltech.edu/forms/byname.html">NED</a>
-					<a class="black2" target="_self" href="https://ufrgs-xgal.voxcharta.org/">VoxCharta</a>
-				</div>
-
+			<div class="clock">
+				<div id="hour" class=""></div>
+				<div id="separator" class=""></div>
+				<div id="minutes" class=""></div>
 			</div>
-            <div id="quote">
-                <h3 style="display: inline"><center><span class="black2">NŌN·EST·AD·ASTRA·MOLLĪS·E·TERRĪS·VIA </span></center>
+
+			<div class="right">
+				<div class="search_box">
+                    <h3 style="display: inline;"><span class="black2"></span></h3>
+                    <form id="searchtxt" onSubmit="return searchengine()">
+                        <input class="input_box" type="text" name="q" placeholder="signa: -r, -g, -m, -w. " \>
+                    </form>
+					<!-- <form action="https://www.duckduckgo.com/" method="get"> -->
+					<!-- <input class="input_box" type="text" name="q" placeholder="~ $ "/> -->
+				</div>
+				<div class="container">
+					<div class="column">
+
+                        <a class="link" target="_self" href="http://globoesporte.globo.com/"><img src='http://globoesporte.globo.com/favicon.ico'>GE</a>
+                        <a class="link"  target="_self" href="https://rateyourmusic.com/"><img src='http://rateyourmusic.com/favicon.ico'>RYM</a>
+                        <a class="link" target="_self" href="http://www.youtube.com"><img src='http://youtube.com/favicon.ico'>Youtube</a>
+                        <a class="link" target="_self" href="http://boards.4chan.org/mu/"><img src='http://4chan.org/favicon.ico'>/mu/</a>
+                        <a class="link"  target="_self" href="https://www.last.fm/home"><img src='http://last.fm/favicon.ico'>LastFM</a>
+                        <a class="link"  target="_self" href="http://www.folha.uol.com.br/"><img src='https://www1.folha.uol.com.br/favicon.ico'>Folha</a>
+                        <a class="link"  target="_self" href="https://tweetdeck.twitter.com/"><img src='http://tweetdeck.twitter.com/favicon.ico'>Tweetdeck</a>
+                        <a class="link"  target="_self" href="https://web.whatsapp.com/"><img src='http://web.whatsapp.com/favicon.ico'>Whatsapp</a>
+					</div>
+					<div class="column">
+
+                        <a class="link" target="_self" href="https://www.reddit.com"><img src="https://reddit.com/favicon.ico">/r/Front</a>
+                        <a class="link" target="_self" href="https://www.reddit.com/r/totalwar"><img src="https://reddit.com/favicon.ico">/r/totalwar</a>
+                        <a class="link" target="_self" href="https://www.reddit.com/r/brasil/"><img src="https://reddit.com/favicon.ico">/r/Brasil</a>
+                        <a class="link" target="_self" href="https://www.reddit.com/r/unixporn/"><img src="https://reddit.com/favicon.ico">/r/unixporn</a>
+                        <a class="link" target="_self" href="https://www.reddit.com/r/ADHD/"><img src="https://reddit.com/favicon.ico">/r/ADHD</a>
+                        <a class="link" target="_self" href="https://www.reddit.com/r/commandline/"><img src="https://reddit.com/favicon.ico">/r/commandline</a>
+                        <a class="link" target="_self" href="https://www.reddit.com/r/futebol/"><img src="https://reddit.com/favicon.ico">/r/futebol</a>
+						<a class="link null">null</a>
+					</div>
+					<div class="column">
+
+                        <a class="link"  target="_self" href="https://arxiv.org/list/astro-ph.GA/recent"><img src='http://arxiv.org/favicon.ico'>astro-ph.GA</a>
+                        <a class="link"  target="_self" href="https://mail.google.com/mail/u/0/#inbox"><img src='http://mail.google.com/favicon.ico'>Gmail</a>
+                        <a class="link" target="_self" href="http://www.ufrgs.br/ufrgs/aluno"><img src='http://www.ufrgs.br/favicon.ico'>UFRGS</a>
+                        <a class="link" target="_self" href="https://www.overleaf.com/"><img src='http://overleaf.com/favicon.ico'>Overleaf</a>
+                        <a class="link" target="_self" href="http://adsabs.harvard.edu/abstract_service.html"><img src='http://adsabs.harvard.edu/favicon.ico'>ADS</a>
+                        <a class="link" target="_self" href="https://ned.ipac.caltech.edu/forms/byname.html"><img src='http://ned.ipac.caltech.edu/favicon.ico'>NED</a>
+                        <a class="link" target="_self" href="https://ufrgs-xgal.voxcharta.org/"><img src='http://www.voxcharta.org/favicon.ico'>VoxCharta</a>
+						<a class="link null">null</a>
+					</div>
+				</div>
+				<div id="greetings" class="">Nōn est ad astra mollīs e terrīs via.</div>
 			</div>
 		</div>
+
 	</body>
 </html>
