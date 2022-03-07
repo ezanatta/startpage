@@ -1,40 +1,7 @@
 <!DOCTYPE html>
 
-
 <html>
 	<head>
-        <script>
-        
-        function searchengine(){
-            var inp=document.getElementById("input").value;
-            
-            if (inp.search('-w')!=-1)
-            {
-                var output=inp.replace("-w ", "https://en.wikipedia.org/wiki/");
-                window.open(output,"_self");
-            }    
-            else if (inp.search('-g')!=-1)
-            {
-                var output=inp.replace("-g ", "https://www.google.com.br/search?client=firefox&q=");
-                window.open(output,"_self");
-            }            
-            else if (inp.search('-m')!=-1)
-            {
-                var output=inp.replace("-m ", "http://www.metal-archives.com/bands/");
-                window.open(output,"_self");
-            }
-            else if (inp.search('-r')!=-1)
-            {
-                var output=inp.replace("-r ", "https://rateyourmusic.com/search?searchtype=a&searchterm=");
-                window.open(output,"_self");
-            } else {
-            
-                var output="https://duckduckgo.com/?q="+inp;
-                window.open(output,"_self");
-            }
-            return false;
-        }
-        </script>
 		
         <title>Home?</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,21 +16,50 @@
 				<img src="notfine.png" alt="">
 			</div>
 
-			<div class="clock">
-				<div id="hour" class=""></div>
-				<div id="separator" class=""></div>
-				<div id="minutes" class=""></div>
-			</div>
-
 			<div class="right">
-				<div class="search_box">
                     <h3 style="display: inline;"><span class="black2"></span></h3>
-                    <form id="searchtxt" onSubmit="return searchengine()">
-                        <input class="input_box" type="text" name="q" placeholder="signa: -r, -g, -m, -w. " \>
+                    <form role="search" id="input_box">
+                        <input class="input_box" type="search" id="query" name="q" placeholder="signa: -r, -g, -m, -w. " aria-label="Search through site content">
                     </form>
-					<!-- <form action="https://www.duckduckgo.com/" method="get"> -->
-					<!-- <input class="input_box" type="text" name="q" placeholder="~ $ "/> -->
-				</div>
+					<script>
+
+					const f = document.getElementById('input_box');
+					const q = document.getElementById('query');
+					
+					function submitted(event){
+						event.preventDefault();
+						
+						if (q.value.search('-w')!=-1)
+						{
+							const url=q.value.replace("-w ", "https://en.wikipedia.org/wiki/");
+							window.open(url,"_self");
+						}    
+						else if (q.value.search('-g')!=-1)
+						{
+							const url=q.value.replace("-g ", "https://www.google.com.br/search?client=firefox&q=");
+							window.open(url,"_self");
+						}            
+						else if (q.value.search('-m')!=-1)
+						{
+							const url=q.value.replace("-m ", "http://www.metal-archives.com/bands/");
+							window.open(url,"_self");
+						}
+						else if (q.value.search('-r')!=-1)
+						{
+							const url=q.value.replace("-r ", "https://rateyourmusic.com/search?searchtype=a&searchterm=");
+							const win = window.open(url,"_blank")
+							win.focus();
+						} else {
+						
+							const url="https://duckduckgo.com/?q="+q.value;
+							const win = window.open(url, '_blank')
+							win.focus();
+						}
+					}
+
+					f.addEventListener('submit', submitted);
+					</script>
+				
 				<div class="container">
 					<div class="column">
 
