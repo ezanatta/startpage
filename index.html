@@ -47,13 +47,11 @@
 						else if (q.value.search('-r')!=-1)
 						{
 							const url=q.value.replace("-r ", "https://rateyourmusic.com/search?searchtype=a&searchterm=");
-							const win = window.open(url,"_blank")
-							win.focus();
+							window.open(url,"_self");
 						} else {
 						
 							const url="https://duckduckgo.com/?q="+q.value;
-							const win = window.open(url, '_blank')
-							win.focus();
+							window.open(url,"_self");
 						}
 					}
 
